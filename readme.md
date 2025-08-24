@@ -1,70 +1,47 @@
-# 🧬 Cancer Detection Using CNN
+🧬 Cancer Detection Using CNN
 
-## 📌 Objective  
-The aim of this project was to build a Convolutional Neural Network (CNN) that can classify histopathological images of cancer into different categories.  
+I recently worked on a project where I built a Convolutional Neural Network (CNN) to classify histopathological images of cancer into different categories.
 
----
+📂 Dataset & Preprocessing
 
-## 📂 Dataset & Preprocessing  
-- Dataset consisted of three categories of histopathological images.  
-- All images were resized to **128×128 pixels** and normalized to the range **[0,1]**.  
-- Data was split into training and testing sets.  
+3 categories of histopathological images
 
----
+Resized to 128×128 & normalized
 
-## 🏗️ Model Architecture  
-- CNN with **3 convolutional layers** followed by max pooling.  
-- Fully connected dense layer with dropout to prevent overfitting.  
-- Output layer with **softmax activation** for multi-class classification.  
+Split into training and testing sets
 
----
+🏗️ Model
 
-## ⚙️ Training Setup  
-- Optimizer: **Adam**  
-- Loss Function: **Categorical Crossentropy**  
-- Epochs: **10**  
-- Batch Size: **32**  
+3 convolutional + pooling layers
 
----
+Dense layer with dropout to prevent overfitting
 
-## 📊 Results  
-- **Training Accuracy:** ~95%  
-- **Validation Accuracy:** ~92%  
-- **Test Accuracy:** ~90%  
-- **Test Loss:** ~0.30  
+Softmax output for multi-class classification
 
----
+⚙️ Training Setup
 
-## 🔍 Observations  
-- The CNN achieved strong accuracy across training and test datasets, indicating effective feature learning.  
-- Some misclassifications were observed in cancer subtypes with visually similar patterns.  
-- Dropout helped reduce overfitting, as training and validation curves were closely aligned.  
+Optimizer: Adam
 
----
+Loss: Categorical Crossentropy
 
-## 🧠 What is CNN?  
-A **Convolutional Neural Network (CNN)** is a type of deep learning model designed for analyzing visual data (images).  
-It works by:  
-- Extracting patterns (edges, textures, shapes) through **convolutional layers**.  
-- Reducing dimensionality and highlighting important features using **pooling layers**.  
-- Classifying images with **fully connected layers** at the end.  
+Epochs: 10 | Batch Size: 32
 
-CNNs are widely used in **image classification, medical imaging, facial recognition, and object detection**.  
+📊 Results
+✅ Training Accuracy: ~95%
+✅ Validation Accuracy: ~92%
+✅ Test Accuracy: ~90%
+📉 Test Loss: ~0.30
 
----
+🔍 Observations
 
-## 🏗️ What is VGG16?  
-**VGG16** is a popular deep CNN model developed by Oxford’s Visual Geometry Group (VGG).  
-- It consists of **16 layers** (13 convolutional + 3 fully connected).  
-- Uses small **3×3 filters** throughout, stacked to capture complex patterns.  
-- Known for its **simplicity and high accuracy**, making it a common choice for transfer learning in medical imaging.  
+CNN effectively captured cancer patterns
 
-While our project uses a basic CNN, models like **VGG16** can further improve accuracy when applied to large datasets.  
+Dropout helped reduce overfitting
 
----
+Misclassifications happened mostly in visually similar cancer subtypes
 
-## ✅ Conclusion  
-The CNN model demonstrated that even a relatively simple architecture can achieve high performance in cancer detection tasks.  
-Future improvements could include experimenting with **VGG16, ResNet, or EfficientNet** and applying **data augmentation** to improve generalization.  
+🏗️ VGG16 Test
+I also experimented with VGG16, and the performance difference was only about 2–3% better compared to my custom CNN. While VGG16 is more powerful, this showed that even a relatively simple CNN can achieve strong results in medical imaging tasks.
 
-- note **if you want to jump directly to the link skipping the code running here it is 👉 http://127.0.0.1:7860**
+✅ Conclusion
+Deep learning shows great potential for healthcare applications. Future improvements could include data augmentation and testing models like ResNet or EfficientNet for further gains.
