@@ -42,6 +42,10 @@ The aim of this project was to build a Convolutional Neural Network (CNN) that c
 
 ---
 
+## 🏗️ VGG16 Test
+I also experimented with VGG16, and the performance difference was only about 2–3% better compared to my custom CNN. While VGG16 is more powerful, this showed that even a relatively simple CNN can achieve strong results in medical imaging tasks.
+
+
 ## 🧠 What is CNN?  
 A **Convolutional Neural Network (CNN)** is a type of deep learning model designed for analyzing visual data (images).  
 It works by:  
@@ -64,7 +68,6 @@ While our project uses a basic CNN, models like **VGG16** can further improve ac
 ---
 
 ## ✅ Conclusion  
-The CNN model demonstrated that even a relatively simple architecture can achieve high performance in cancer detection tasks.  
-Future improvements could include experimenting with **VGG16, ResNet, or EfficientNet** and applying **data augmentation** to improve generalization.  
+The CNN model demonstrated that even a relatively simple architecture can achieve high performance in cancer detection tasks.
 
 - note **if you want to jump directly to the link skipping the code running here it is 👉 http://127.0.0.1:7860**
